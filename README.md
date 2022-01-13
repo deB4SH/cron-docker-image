@@ -6,5 +6,4 @@ Docker images to run `cron` inside the Docker container
 
 ## Tags
 
-* [debian, latest](debian) (~170Mb)
-* [alpine](alpine) (~8Mb)
+* [bookworm-20211220](debian) (~170Mb)
