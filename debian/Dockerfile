@@ -1,9 +1,9 @@
-FROM debian:latest
+FROM debian:bookworm-20211220
 
 RUN set -ex \
     && apt-get clean && apt-get update \
 # install cron
-    && apt-get install -y cron \
+    && apt-get install -y cron wget curl \
     && rm -rf /var/lib/apt/lists/* \
 # making logging pipe
     && mkfifo --mode 0666 /var/log/cron.log \
